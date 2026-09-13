@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8f4;
+    color: #333;
+}
+
+
+/* ================= NAVBAR ================= */
+
+nav {
+    background: #1b5e20;
+    color: white;
+    padding: 18px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #c8e6c9;
+}
+
+
+/* ================= HERO - HOMEPAGE ONLY ================= */
+
+.hero {
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 70, 30, 0.55),
+            rgba(0, 70, 30, 0.55)
+        ),
+        url("image.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+.hero h1 {
+
+    font-size: 42px;
+
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+
+    color: white;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.btn,
+button {
+
+    display: inline-block;
+
+    background: #2e7d32;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.btn:hover,
+button:hover {
+
+    background: #1b5e20;
+}
+
+
+/* ================= FEATURES ================= */
+
+.features {
+
+    padding: 70px 10%;
+
+    text-align: center;
+}
+
+.features h2 {
+
+    margin-bottom: 40px;
+
+    font-size: 28px;
+
+    color: #1b5e20;
+}
+
+
+/* ================= CARDS ================= */
+
+.cards {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.card {
+
+    background: white;
+
+    width: 280px;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+
+    margin-bottom: 15px;
+
+    color: #1b5e20;
+}
+
+.card p {
+
+    line-height: 1.6;
+}
+
+
+/* ================= FORMS ================= */
+
+.form-container {
+
+    width: 400px;
+
+    max-width: 90%;
+
+    margin: 60px auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    color: #1b5e20;
+}
+
+
+/* ================= INPUTS ================= */
+
+input,
+textarea,
+select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+
+    outline: none;
+
+    border-color: #2e7d32;
+
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.3);
+}
+
+
+textarea {
+
+    height: 120px;
+
+    resize: none;
+}
+
+.form-container button {
+
+    width: 100%;
+}
+
+
+/* ================= MESSAGES ================= */
+
+.message {
+
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    color: #2e7d32;
+}
+
+.error {
+
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    color: red;
+}
+
+
+/* ================= DASHBOARD ================= */
+
+.dashboard {
+
+    width: 80%;
+
+    margin: 50px auto;
+}
+
+.dashboard h1 {
+
+    margin-bottom: 25px;
+
+    color: #1b5e20;
+}
+
+.dashboard h2 {
+
+    margin-top: 40px;
+
+    margin-bottom: 20px;
+
+    color: #1b5e20;
+}
+
+
+/* ================= ISSUE CARDS ================= */
+
+.issue-card {
+
+    background: white;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.issue-card h3 {
+
+    color: #1b5e20;
+
+    margin-bottom: 10px;
+}
+
+.issue-card p {
+
+    margin: 8px 0;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    text-align: center;
+
+    background: #1b5e20;
+
+    color: white;
+
+    padding: 20px;
+
+    margin-top: 50px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .hero {
+
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+
+        font-size: 30px;
+    }
+
+    .hero p {
+
+        font-size: 16px;
+    }
+
+    .dashboard {
+
+        width: 90%;
+    }
+}
